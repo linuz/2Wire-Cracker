@@ -1,0 +1,16 @@
+This is a script to run a dictionary attack on AT&T 2Wire Router login pages.
+
+Confirmed with 2Wire Models:
+	3800HGV-B
+
+Requires:
+~~~~~~~~~
+	Python => 2.7
+	Mechanize libraries  <http://wwwsearch.sourceforge.net/mechanize/>
+
+Usage:
+~~~~~~
+Put in the router url that asks for a password in the first argument and a wordlist to guess the password with as the second argument.
+	python 2Wire-Cracker.py <Router Login URL> <Wordlist>
+
+	Example: python 2Wire-Cracker.py "http://192.168.1.254/xslt?PAGE=C_0_1" "common_passwords.txt"
