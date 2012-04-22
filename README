@@ -10,7 +10,7 @@ Requires:
 
 Usage:
 ~~~~~~
-Put in the router url that asks for a password in the first argument and a wordlist to guess the password with as the second argument.
-	python 2Wire-Cracker.py <Router Login URL> <Wordlist>
+Put in the router url that asks for a password in the first argument, a wordlist to guess the password with as the second argument, and the failed password string to check for in the third argument.
+	python 2Wire-Cracker.py <Router Login URL> <Wordlist> <failed string>
 
-	Example: python 2Wire-Cracker.py "http://192.168.1.254/xslt?PAGE=C_0_1" "common_passwords.txt"
+	Example: python 2Wire-Cracker.py "http://192.168.1.254/xslt?PAGE=C_0_1" "common_passwords.txt" "The password is incorrect."
