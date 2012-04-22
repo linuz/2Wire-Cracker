@@ -6,9 +6,9 @@
 #################################################
 import mechanize, sys
 
-#if len(sys.argv) != 4:
-#	print 'Usage:\n\tpython 2Wire-Cracker.py <Router Login URL> <Wordlist>\n\nExample:\n\tpython 2Wire-Cracker.py "http://192.168.1.254/xslt?PAGE=C_0_1" "common_passwords.txt" "The password is incorrect."'
-#	quit()
+if len(sys.argv) != 3:
+	print '\nView README for the list of compatible routers.\n\nUsage:\n\tpython 2Wire-Cracker.py <Router IP> <Wordlist>\n\nExample:\n\tpython 2Wire-Cracker.py 192.168.1.254 common_passwords.txt\n'
+	quit()
 
 browser = mechanize.Browser()
 

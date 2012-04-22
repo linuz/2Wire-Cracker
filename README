@@ -2,6 +2,7 @@ This is a script to run a dictionary attack on AT&T 2Wire Router login pages.
 
 Confirmed with 2Wire Models:
 	3800HGV-B
+	2701HG-B
 
 Requires:
 ~~~~~~~~~
@@ -10,7 +11,11 @@ Requires:
 
 Usage:
 ~~~~~~
-Put in the router url that asks for a password in the first argument, a wordlist to guess the password with as the second argument, and the failed password string to check for in the third argument.
-	python 2Wire-Cracker.py <Router Login URL> <Wordlist> <failed string>
+Put in the router's IP address in the first argument, and a wordlist in the second argument.
 
-	Example: python 2Wire-Cracker.py "http://192.168.1.254/xslt?PAGE=C_0_1" "common_passwords.txt" "The password is incorrect."
+	python 2Wire-Cracker.py <Router IP> <Wordlist>
+
+	Example: python 2Wire-Cracker.py 192.168.1.254 common_passwords.txt
+
+
+If you are able to get this to work for other models of routers, please let me know so I can add compatibility. You can email me at <dennismald [at] gmail.com>
