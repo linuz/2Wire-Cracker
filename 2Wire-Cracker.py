@@ -1,6 +1,6 @@
 #!/usr/bin/Python
 #################################################
-# 2Wire Dictionary Cracker						#
+# 2Wire Dictionary Cracker v2.1					#
 # By: Dennis Linuz <dennismald@gmail.com>		#
 # Crack 2Wire router login passwords			#
 #################################################
